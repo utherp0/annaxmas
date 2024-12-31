@@ -1,0 +1,59 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Answer!</title>
+
+  <style>
+    body {background-color:blue;color:white;font-weight:bold;font-size:20px;font-family:arial}
+
+    a {color:yellow;font-weight:bold;font-size:25px;font-family:arial}
+
+    div.answer 
+    {
+      background-color:yellow;
+      color:black;
+      font-size:25px;
+      font-family:arial;
+      font-weight:bold;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 15px;
+      padding-right: 15px
+    }
+  </style>
+
+  <script>
+
+    function reveal()
+    {
+      attempt = document.getElementById("guess").value.toUpperCase();
+
+      if( attempt == "MAGICAL MYSTERY TOUR" )
+      {
+        document.getElementById("answer").style = "display:block";
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+<h1>Enter your answer....</h1>
+
+<div width=100% style="border-style:outset; border-color: white; padding-top:15px; padding-bottom:15px; padding-left:15px; padding-right:15px">
+<input type="text" style="width:75%; background-color:white; color:black;font-size:25px;font-family:arial" id="guess"/>
+<button type="button" style="font-size:20px;font-weight:bold;font-family:arial" onClick="reveal();">Submit your guess....</button>
+</div>
+
+<br/>
+<br/>
+<div style="display:none" class="answer" id="answer">
+Congrats Anna (and Elf)!!!!<br/><br/>
+Your mission, if you choose to accept it:<br/><br/>
+Give Uth the dates for two nights. Then show up. Instructions will be given on the day. All directions will be provided at the point you need it. Clothing style will be suggested. No information on destination or activities will be provided beforehand.<br/><br/>
+HAPPY XMAS!!!!
+</div>
+</body>
+
+</html>
